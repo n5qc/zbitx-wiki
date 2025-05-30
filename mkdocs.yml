@@ -1,0 +1,6 @@
+site_name: zbitx-wiki
+site_url: https://n5qc.github.io/zbitx-wiki/
+theme:
+  name: material
+nav:
+  - Home: index.md
