@@ -1,0 +1,1 @@
+{"config":{"lang":["en"],"separator":"[\\s\\-]+","pipeline":["stopWordFilter"]},"docs":[{"location":"","title":"Welcome to zbitx-wiki","text":"<p>This is a starter MkDocs site with the Material theme.</p>"},{"location":"#getting-started","title":"Getting Started","text":"<p>Use this template as a base to build your own zBITX documentation site.</p>"}]}
