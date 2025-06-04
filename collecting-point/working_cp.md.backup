@@ -1,0 +1,142 @@
+
+~~***All copied to Travelling CP for laptop editing.  5/31/25***~~
+
+
+
+
+
+
+**Do Backlog grooming.** 
+
+Get the thoughts together, include literature search and. Pulling in diverse notes. 
+Build the out via notebook LM. 
+Start populating. 
+Go ahead and work on multiple pages to get them boilerplate added. 
+	Home landing page. Welcome to the Z bit X wiki and getting started. 
+	Update the footer. It says currently copyright N5QC add "and contributors"
+	Change Log 
+	Contributing
+	FAQ
+	Hardware
+	Software
+	Backlog
+	License call the license good for now. 
+
+Backlog 
+
+Software 
+	Do a search
+	Mention the A Faron GitHub site, which is the current dev site
+	Mention Forks. 
+	Find whatever ones makes sense to list. 
+		Include the one with pretty good documentation and build it out and go through. 
+		Include the one with shut down 
+		Any others that make sense to include
+
+Hardware
+	Pictures and schematics
+	Talk about the general architecture
+		Pi Zero
+		Pico. 
+
+History add in some things about overheating and etc.
+
+FAQ. Start building a list there 
+
+Contributing change and n5qc e-mail address to the groups dot IO. 
+
+Change log. 
+
+And once this is done, go ahead and do a literature search and start compiling note. 
+My workflow will go through notebook LM build 
+
+Notes to Self CHEAT SHEET and build in the backup schedule, backup plan and anything else that seems to make sense. 
+
+And I think that's it for now. 
+
+Then pay homage to groups that I owe and uh get all this done and get a good back up and go live. 
+
+I think that's about enough for this session, but I'm sure there's more to come. 
+
+
+================================================================================
+
+2025 05 31 Additional Thoughts
+
+Some background about me. 
+
+Why did I do this? I decided that I was going to research the Z bit X and started making notes. 
+Looked like it would be useful to share them, so I decided to put them in the wiki. 
+Looking forward to what things I might want to do, I decided that publishing a site via GitHub would be a good learning experience, so I chose to do that on the Raspberry Pi. 
+
+Is this the best way to do it? 
+Not necessarily. 
+
+Is this a learning experience for me? 
+Yes, that's the goal. 
+
+Am I willing to share my learning experiences? 
+Yes, that's why I'm publishing. 
+
+Am I trying to compete with Groups dot IO? 
+No with the Creative Commons license that I put on this it will already be able to be moved on to places including Groups dot io with attribution and as I get further down the road, I will probably stop maintaining this site and try to transition it to some place that has more longevity. 
+An example. For model is Toshen's work on digital voice where he did a lot of good work that is still recognized as THE good overview and he has stopped maintaining it but has left the PDF out there for people to read. Probably PDF's that can't be edited and aren't the best bet, but trying to get things over to a site is anyway just some rambling thoughts that need to get put into the FAQ's and etcetera, etcetera.
+
+
+
+==============================================
+
+From One Note
+
+	• Working Collecting Point — Stays on Pi Git
+	• Traveling Collecting Point — Back and Forth to Laptop
+	• Daily Workflow
+		○ Start Pi
+		○ Activate virtual environment 
+		○ Pull
+		○ Sftp files including traveling collecting point
+		○ Close working collecting point to active collecting point
+		○ Close active collecting point to backlog 
+		○ Work
+		○ Update change log
+		○ Commit & Build
+		○ Push & Test
+		○ Adjust traveling collecting point as needed
+		○ Copy traveling collecting point to laptop
+		○ Deactivate 
+		○ Backup 
+		○ Copy backup to large files
+	• Backup Workflow
+		○ Backup git in daily
+		○ Image & Rotate cards
+		○ Upload Compressed images
+	• Branching Plan
+		○ Main
+		○ Gh-pages
+		○ Dev or editing
+		○ Contrib 
+		○ Safety & authority 
+			§ only me or designate can update man and build / publish
+			§ Dev = TBD — I am thinking limited access scratch pad
+Contrib = place for contributors (or do they just make their own branch and pull requests 
+
+
+
+
+
+**Do Backlog grooming.**
+
+
+
+
+
+Change log.
+
+And once this is done, go ahead and do a literature search and start
+compiling note. My workflow will go through notebook LM build
+
+Then pay homage to groups that I owe and uh get all this done and get a
+good back up and go live.
+
+
+

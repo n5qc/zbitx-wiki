@@ -1,0 +1,46 @@
+reminders.md
+
+Create (or Recreate) Virtual Environment:\
+python3 -m venv zbitx-wiki-env
+
+Activate Virtual Environment:\
+For mkdocs-starter: source env/bin/activate
+
+Deactivate Virtual Environment:\
+deactivate
+
+You can save your Python environment in case you need to rebuild again:
+
+pip freeze \> requirements.txt
+
+**[DONE 5/31/25]{.underline}**
+
+Then in the future you can restore with:
+
+pip install -r requirements.txt
+
+Before Shutting Down, move out of project directoy:\
+cd \~
+
+Preferred Shutdown Method:\
+sudo shutdown now
+
+Linux_CL_Reminders
+
+sudo apt-get update
+
+sudo apt-get upgrade
+
+sudo apt-get dist-upgrade
+
+logout or exit
+
+sudo reboot
+
+sudo shutdown -h now
+
+sudo raspi-config
+
+This Wiki Site:
+
+https://n5qc.github.io/zbitx-wiki/

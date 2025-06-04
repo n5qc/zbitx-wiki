@@ -1,0 +1,183 @@
+# Currently in collecting point for travelling and editing
+
+# Backup and Restore: zbitx-wiki Development Environment
+
+This guide describes how to create and restore a backup of the full
+development environment for the zBITX-Wiki, including all content,
+configuration, and Git history.
+
+------------------------------------------------------------------------
+
+## Daily Working Backup Instructions
+
+###  Whats Included:
+
+- Project files (Markdown, config, assets, etc.)
+- `.git` directory with full Git history and local branches
+- Python virtual environment (optional)
+- Local-only notes and untracked files
+
+###  When to Back Up:
+
+- After major changes or successful GitHub Pages deployments
+- Before system upgrades or Raspberry Pi changes
+- Periodically, as insurance against SD card failure
+
+------------------------------------------------------------------------
+
+### Step-by-Step Daily Working Snapshot Backup (from home directory)
+
+Move to your home directory (or parent of zBITX-Wiki)
+
+**cd \~**
+
+# Create a compressed archive with today's date
+
+**  tar -czf zbitx-wiki-full-backup-$(date +%Y%m%d).tar.gz zBITX-Wiki/  **
+
+# Keep rolling copies in Large Files on N5QC One Drive / HP Desktop
+
+**3 -- 2 -- 1 Analyisis**
+
+- 3 Copies
+
+  1.  Backup on Raspberry Pi Home
+
+  2.  Copy on HP Laptop 🡪 MyBook External
+
+  3.  Copy on OneDrive Cloud
+
+- 2 Different Media
+
+  1.  Raspberry Pi uSD Card
+
+  2.  MyBook External (Spinning Magnetic Disk)
+
+  3.  OneDrive Cloud -- Who knows the media, redundant cloud data
+      centers
+
+- 1 -- At Least -- Offsite
+
+  1.  OneDrive Cloud
+
+  2.  Published Stuff on GitHub
+
+## Monthly and Significant Milestone System Image Instructions
+
+###  Whats Included:
+
+- Full Raspberry Pi Development System
+
+### When to Back Up:
+
+- At Least Monthly while actively working
+- After major changes or successful GitHub Pages deployments
+- Before system upgrades or Raspberry Pi changes
+- Periodically, as insurance against SD card failure
+
+------------------------------------------------------------------------
+
+### Step-by-Step System Image
+
+Close all files and apps
+
+Use Raspberry Pi Imager to make a backup image on a separate Micro SD
+Card
+
+Make a compressed image of the backup card that can be stored in
+multiple places.
+
+**Raspberry Pi SD Shrink + Image Checklist** 
+
+ 
+
+Make sure gparted is installed:
+
+sudo apt update
+
+sudo apt install gparted 
+
+Run gparted to shrink the partition (is this necessary?)
+
+sudo gparted
+
+Right click on the lock icon to unlock the ext4 partition -- Probably
+sdb2
+
+Shrink the partition as much as possible.
+
+There is a step in the process to zero out free space but I think
+Raspberry Pi shrinker does that so skipping for now.
+
+Make the image:
+
+sudo dd if=/dev/sdb of=2025_05_27_zBITX-Wiki_MVP_2.img bs=4M
+status=progress 
+
+sudo dd if=/dev/sdb of=2025_05_31_zbitx-wiki.img bs=4M status=progress
+
+> yyyy_mm_dd_zbitx-wiki.img
+
+ \
+sync
+
+Shrink & make the image auto-expand (recommended) \
+Install PiShrink: 
+
+wget
+https://raw.githubusercontent.com/Drewsif/PiShrink/master/pishrink.sh
+
+chmod +x pishrink.sh
+
+sudo mv pishrink.sh /usr/local/bin
+
+ 
+
+Run pishrink:
+
+sudo pishrink.sh 2025_05_31_zbitx-wiki.img
+
+> yyyy_mm_dd_zbitx-wiki.img
+
+ 
+
+Compress the image:
+
+xz -9 2025_05_31_zbitx-wiki.img
+
+> yyyy_mm_dd_zbitx-wiki.img
+
+ 
+
+1.  → You now have raspberrypi.img.xz 
+
+2.  Save the image in Large Files Repository and MyBook External 
+
+3.  Restore the image with Raspberry Pi Imager or flash:
+
+> xzcat raspberrypi.img.xz \| sudo dd of=/dev/sdX bs=4M status=progress 
+
+# Keep rolling copies in Large Files on N5QC One Drive / HP Desktop
+
+**3 -- 2 -- 1 Analyisis**
+
+- 3 Copies
+
+  1.  New MicroSD Card
+
+  2.  Copy on HP Laptop 🡪 MyBook External
+
+  3.  Copy on OneDrive Cloud
+
+- 2 Different Media
+
+  1.  Raspberry Pi uSD Card
+
+  2.  MyBook External (Spinning Magnetic Disk)
+
+  3.  OneDrive Cloud -- Who knows the media, redundant cloud data
+      centers
+
+- 1 -- At Least -- Offsite
+
+  1.  OneDrive Cloud

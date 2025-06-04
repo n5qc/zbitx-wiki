@@ -1,0 +1,90 @@
+
+
+
+Create (or Recreate) Virtual Environment:  
+python3 -m venv zbitx-wiki-env
+
+
+Activate Virtual Environment:  
+For zbit-wiki:  source zbitx-wiki-env/bin/activate
+
+For mkdocs-starter:  source env/bin/activate
+
+
+Deactivate Virtual Environment:  
+deactivate
+
+You can save your Python environment in case you need to rebuild again:
+pip freeze > requirements.txt   DONE 5/31/25
+
+Then in the future you can restore with:
+pip install -r requirements.txt
+
+
+
+Before Shutting Down, move out of project directoy:  
+cd ~
+
+
+Preferred Shutdown Method:  
+sudo shutdown now
+
+
+My Web Site Ought to be at:
+https://N5QC.github.io/zBITX-Wiki/
+
+
+
+Linux_CL_Reminders
+
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get dist-upgrade
+logout or exit
+sudo reboot
+sudo shutdown -h now
+
+
+sudo raspi-config
+
+Test 5/30/25 AM:  https://N5QC.github.io/zBITX-Wiki/
+
+
+
+Alternative Resources:
+
+GitHub Pages Overview:  https://pages.github.com/
+
+Your GitHub Pages site is currently being built from the gh-pages branch
+https://docs.github.com/articles/configuring-a-publishing-source-for-github-pages/
+
+There isn't a GitHub Pages site here.
+
+If you're trying to publish one, read the full documentation to learn how to set up GitHub Pages for your repository, organization, or user account. 
+ 
+https://help.github.com/pages/
+
+
+===========================
+
+Set up new GitHub Repository:
+https://github.com/N5QC/N5QC.github.io.git
+
+git clone https://github.com/N5QC/N5QC.github.io.git
+
+
+Fire up a browser and go to https://N5QC.github.io
+
+
+
+
+git remote add origin https://github.com/n5qc/zbit-wiki.git
+
+
+
+
+git remote add origin https://github.com/n5qc/zbitx-wiki.git
+
+
+INFO    -  Your documentation should shortly be available at:
+           https://n5qc.github.io/zbitx-wiki/

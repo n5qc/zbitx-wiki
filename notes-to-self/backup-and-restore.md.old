@@ -1,0 +1,33 @@
+
+# Currently in collecting point for travelling and editing
+
+
+# Backup and Restore: zBITX-Wiki Development Environment
+
+This guide describes how to create and restore a backup of the full development environment for the zBITX-Wiki, including all content, configuration, and Git history.
+
+---
+
+## ? Backup Instructions
+
+### ? What?s Included:
+- Project files (Markdown, config, assets, etc.)
+- `.git` directory with full Git history and local branches
+- Python virtual environment (optional)
+- Local-only notes and untracked files
+
+### ? When to Back Up:
+- After major changes or successful GitHub Pages deployments
+- Before system upgrades or Raspberry Pi changes
+- Periodically, as insurance against SD card failure
+
+---
+
+### ? Step-by-Step Backup (from home directory)
+
+```bash
+# Move to your home directory (or parent of zBITX-Wiki)
+cd ~
+
+# Create a compressed archive with today's date
+tar -czf zbitx-wiki-full-backup-$(date +%Y%m%d).tar.gz zBITX-Wiki/
