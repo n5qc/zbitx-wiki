@@ -1,6 +1,34 @@
-site_name: zbitx-wiki
+site_name: zBITX Wiki
 site_url: https://n5qc.github.io/zbitx-wiki/
+repo_url: https://github.com/n5qc/zbitx-wiki
+repo_name: n5qc/zbitx-wiki
 theme:
   name: material
+  custom_dir: docs/overrides
+  name: material
+  features:
+    - navigation.instant
+    - navigation.sections
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+
 nav:
   - Home: index.md
+  - About: about.md
+  - Changelog: changelog.md
+  - Contributing: contributing.md
+  - FAQ: faq.md
+  - Hardware: hardware.md
+  - Software: software.md
+  - Backlog: backlog.md
+  - License: license.md
+
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
